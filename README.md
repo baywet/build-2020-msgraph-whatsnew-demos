@@ -25,3 +25,9 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
     - app being accessed
     - the context (browser or native app, location...)
     - the user (groups, type of users)
+
+#### Additional resources
+
+- [building a conditional access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies)
+- [conditional access policy reference](https://docs.microsoft.com/en-us/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http)
+ 
