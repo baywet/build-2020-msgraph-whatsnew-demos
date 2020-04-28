@@ -26,8 +26,9 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
     - the context (browser or native app, location...)
     - the user (groups, type of users)
 
+>Note: we could also show up the newly created policy in [Azure Portal](https://portal.azure.com) > Azure AD > Security > Conditional Access
+
 #### Additional resources
 
 - [building a conditional access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies)
 - [conditional access policy reference](https://docs.microsoft.com/en-us/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http)
- 
