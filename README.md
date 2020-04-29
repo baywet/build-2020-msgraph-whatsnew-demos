@@ -32,3 +32,16 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
 
 - [building a conditional access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies)
 - [conditional access policy reference](https://docs.microsoft.com/en-us/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http)
+
+
+### Improved query capabilities for MIP entities (preview)
+
+> This demo is optional, we'll see if we have time during recording.
+
+1. Open the Graph Explorer.
+1. Add the following request header `ConsistencyLevel` set to `eventual`.
+1. GET `https://graph.microsoft.com/beta/users/$count`
+1. GET `https://graph.microsoft.com/beta/groups?$count=true`
+1. GET `https://graph.microsoft.com/beta/users?$filter=startswith(displayName, 'donald')&$orderby=displayName&$count=true&$select=displayName`
+1. GET `https://graph.microsoft.com/beta/users?$search="displayName:donald"&$orderby=displayName&$count=true&$select=displayName` (explain the difference between search and startsWith)
+1. GET `https://graph.microsoft.com/beta/groups/62bbe7bc-aeeb-4a9e-af68-3e4e2779d7c7/transitiveMembers/microsoft.graph.user?$count=true&$select=displayName,Id&$orderby=displayName` (explain the cast happening)
