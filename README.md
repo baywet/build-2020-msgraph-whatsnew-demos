@@ -34,14 +34,12 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
 - [conditional access policy reference](https://docs.microsoft.com/en-us/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http)
 
 
-### Improved query capabilities for MIP entities (preview)
+### Improved query capabilities for Directory Objects (preview)
 
 > This demo is optional, we'll see if we have time during recording.
 
 1. Open the Graph Explorer.
 1. Add the following request header `ConsistencyLevel` set to `eventual`.
-1. GET `https://graph.microsoft.com/beta/users/$count`
-1. GET `https://graph.microsoft.com/beta/groups?$count=true`
-1. GET `https://graph.microsoft.com/beta/users?$filter=startswith(displayName, 'donald')&$orderby=displayName&$count=true&$select=displayName`
-1. GET `https://graph.microsoft.com/beta/users?$search="displayName:donald"&$orderby=displayName&$count=true&$select=displayName` (explain the difference between search and startsWith)
-1. GET `https://graph.microsoft.com/beta/groups/62bbe7bc-aeeb-4a9e-af68-3e4e2779d7c7/transitiveMembers/microsoft.graph.user?$count=true&$select=displayName,Id&$orderby=displayName` (explain the cast happening)
+1. GET `https://graph.microsoft.com/beta/users/$count?$filter=UserType  eq 'Member'` (Raw User Count with Filtering)
+1. GET `https://graph.microsoft.com/beta/users?$count=true&$select=displayName,Id&$orderby=displayName&$search="displayName:queen"` (Search, Sort & Count Users)
+1. GET `https://graph.microsoft.com/beta/groups/792be2c1-1b38-4083-b5d0-d49c8a3b8f2d/transitiveMembers/microsoft.graph.user?$count=true&$select=displayName,Id&$search="displayName:queen"&$orderby=displayName` (Search & Count Group members transitively)
