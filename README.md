@@ -9,6 +9,16 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
 - Demonstration tenant with Azure AD P2 licenses
 - [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7#installing-the-msi-package)
 
+### Phone-auth method
+
+1. Run `demos/phone-auth/script.ps1`.
+1. Go over what each command does.
+1. Signal we'll see the result in the conditional access demo.
+
+#### Additional resources
+
+- [Phone auth method reference](https://docs.microsoft.com/en-us/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta)
+
 ### Conditional access
 
 >Note: this demonstration requires MFA settings to be configured on the user being demonstrated.
