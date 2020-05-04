@@ -7,6 +7,7 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
 
 - [Microsoft Graph PowerShell](https://www.powershellgallery.com/packages/Microsoft.Graph)
 - Demonstration tenant with Azure AD P2 licenses
+- [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7#installing-the-msi-package)
 
 ### Conditional access
 
