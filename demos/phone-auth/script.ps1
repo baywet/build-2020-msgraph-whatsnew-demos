@@ -2,7 +2,8 @@ Import-Module Microsoft.Graph
 Connect-Graph -Scopes "UserAuthenticationMethod.ReadWrite.All"
 
 $email = Read-Host -Prompt "Enter a user email (not the email currently signed-in with)"
-$phoneNumber = Read-Host -Prompt "Enter a phone number (format +1 5555555555)"
+$securePhoneNumber = Read-Host -Prompt "Enter a phone number (format +1 5555555555)" -AsSecureString
+$phoneNumber = ConvertFrom-SecureString -AsPlainText -SecureString $securePhoneNumber
 
 Get-MgUserAuthenticationPhoneMethod -UserId $email
 
