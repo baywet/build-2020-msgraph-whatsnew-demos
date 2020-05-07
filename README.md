@@ -51,6 +51,6 @@ Demonstrations that we need to build for the build 2020 Microsoft Graph What's n
 
 1. Open the Graph Explorer.
 1. Add the following request header `ConsistencyLevel` set to `eventual`.
-1. GET `https://graph.microsoft.com/beta/users/$count?$filter=UserType  eq 'Member'` (Raw User Count with Filtering)
+1. GET `https://graph.microsoft.com/beta/users/$count?$filter=startsWith(officeLocation, '18')` (Raw User Count with Filtering)
 1. GET `https://graph.microsoft.com/beta/users?$count=true&$select=displayName,Id&$orderby=displayName&$search="displayName:queen"` (Search, Sort & Count Users)
 1. GET `https://graph.microsoft.com/beta/groups/792be2c1-1b38-4083-b5d0-d49c8a3b8f2d/transitiveMembers/microsoft.graph.user?$count=true&$select=displayName,Id&$search="displayName:queen"&$orderby=displayName` (Search & Count Group members transitively)
